@@ -68,6 +68,9 @@ header img {
 }
 
 /*BOX CARDS*/
+#boxBianco {
+  text-align: center;
+}
 #boxBianco #testi {
   width: 100%;
   text-align: left;
@@ -81,39 +84,40 @@ header img {
   display: inline-block;
 }
 #boxBianco img {
-  text-align: center;
-  width: 23%;
+  object-fit: cover;
+  width: 311px;
+  height: 340px;
   border-radius: 5%;
-  box-shadow: rgba(0, 0, 0, 0.15) 5px 5px px;
+  margin: 0.75rem;
+  box-shadow: 9px 7px 15px 0px rgba(34, 60, 80, 0.2);
 }
 .card {
   width: 100%;
   display: inline;
   text-align: left;
   vertical-align: top;
-  margin: 10px;
 }
 
 /*ASIDE*/
 #aside {
   margin-left: 15px;
   margin-right: 15px;
-  padding-top:20px;
+  padding-top: 20px;
 }
 #aside figure {
   margin: 0;
   text-align: center;
   font-size: 20px;
 }
-figure figcaption{
-    display: inline-block;
-    margin: 0;
-    margin-right: 10px;
+figure figcaption {
+  display: inline-block;
+  margin: 0;
+  margin-right: 10px;
 }
 figure p {
-    display: inline-block;
-    margin-top: 0;
-  }
+  display: inline-block;
+  margin-top: 0;
+}
 #aside figure img {
   width: 100%;
 }
@@ -133,7 +137,7 @@ footer a {
   background-color: #222f3f;
 }
 #boxBlu img {
-  width: 15%;
+  width: 10%;
   padding: 50px;
   text-align: center;
 }
