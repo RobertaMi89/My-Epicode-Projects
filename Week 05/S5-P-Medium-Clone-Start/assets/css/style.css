@@ -91,7 +91,8 @@ main h1 {
 }
 .M {
   margin-top: 100px;
-  left: 50%;
+  left: initial;
+  right: 0;
   width: 585px;
   position: absolute;
 }
@@ -103,7 +104,14 @@ article {
   font-family: "spectral";
   font-family: "roboto";
 }
-
+#articoli p {
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 1px;
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+}
 .listaArt {
   flex-wrap: wrap;
   list-style: none;
@@ -115,15 +123,15 @@ article {
   margin-right: 10px;
 }
 .listaArt li {
-  width: 30%;
+  width: 29%;
   margin-bottom: 50px;
+  flex-direction: column;
 }
 .listaArt li img {
   border-radius: 50%;
 }
 .bold {
   font-weight: bold;
-  font-size: 1.2em;
 }
 .center {
   align-items: center;
@@ -184,7 +192,7 @@ section {
 .imgArt {
   justify-content: end;
 }
-/*ASIdE*/
+/*ASIDE*/
 .side {
   flex-direction: column;
   font-family: "roboto";
