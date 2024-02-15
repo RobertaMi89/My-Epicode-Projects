@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quizz App - Epicode</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <div id="container">
+      <header>
+        <div id="logo">
+          <img src="assets/imgs/epicode_logo.png" alt="epicode-logo" />
+        </div>
+      </header>
+      <main>
+        <div class="frontpage">
+          <h1 class="welcome">
+            Welcome to <br /><span class="bold"> your exam</span>
+          </h1>
+          <h2 class="pink">Instructions</h2>
+          <p class="instrText">
+            We don't expect most engineers to know the answer to all of these
+            question, so don't worry if you're unsure of a few of them.
+          </p>
+
+          <ul class="lista">
+            <li>
+              Each question is <span class="bold">timed</span> and can only be
+              <span class="bold">answered once.</span>
+            </li>
+            <li>
+              changing browser tab or opening other windows will
+              <span class="bold">invalidate the question.</span>
+            </li>
+            <li>
+              This exam will take approx. <span class="bold">0-5 minutes.</span>
+            </li>
+          </ul>
+          <div class="proceed">
+            <div class="input-wrapper">
+              <input type="checkbox" id="start-checkbox" />
+              <label for="start-checkbox" class="bold"
+                >I promise to answer myself without help from anyone</label
+              >
+            </div>
+            <button id="btn-proceed" class="fakebutton" disabled>
+              PROCEED
+            </button>
+          </div>
+        </div>
+      </main>
+    </div>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
