@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Artist</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./assets/CSS/style.css" />
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="backGroundBlack text-light col-3 p-0">
+          <!--ICON NAVBAR -->
+          <navbar class="text-light mb-2">
+            <ul class="list-group">
+              <li class="list-group-item border-0 bg-transparent">
+                <i class="fa-solid fa-ellipsis" style="color: #687078"></i>
+              </li>
+              <li class="list-group-item border-0 bg-transparent">
+                <a href="./homepage.html"
+                  ><i class="fa-solid fa-house me-2" style="color: #687078"></i
+                ></a>
+                <a
+                  class="text-secondary text-decoration-none"
+                  href="./homepage.html"
+                  >Home</a
+                >
+              </li>
+              <li class="list-group-item border-0 bg-transparent">
+                <div
+                  type="button"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
+                >
+                  <i
+                    class="fa-solid fa-magnifying-glass me-2"
+                    style="color: #687078"
+                  ></i>
+                  <a class="text-secondary text-decoration-none" href="#"
+                    >Cerca</a
+                  >
+                </div>
+                <div
+                  class="modal fade"
+                  id="exampleModal"
+                  tabindex="-1"
+                  aria-labelledby="exampleModalLabel"
+                  aria-hidden="true"
+                >
+                  <!--MODALE-->
+                  <div class="modal-dialog modal-xl">
+                    <div class="modal-content">
+                      <div class="backGroundBlack modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">
+                          <button
+                            type="button"
+                            class="d-flex flex-row btn btn-dark align-items-center rounded-5"
+                          >
+                            <i
+                              class="fa-solid fa-magnifying-glass me-2"
+                              style="color: #687078"
+                            ></i>
+                            <a class="text-light text-decoration-none" href="#"
+                              ><input
+                                id="searchBar"
+                                class="form-control me-2 rounded-5 border-0"
+                                type="search"
+                                placeholder="Cosa vuoi ascoltare?"
+                                aria-label="Search"
+                                data-bs-theme="dark"
+                            /></a>
+                          </button>
+                        </h1>
+                        <button
+                          type="button"
+                          class="btn-close bg-secondary"
+                          data-bs-dismiss="modal"
+                          aria-label="Close"
+                        ></button>
+                      </div>
+                      <div class="modal-body bg-dark text-light">
+                        <h4><strong>Sfoglia tutto</strong></h4>
+
+                        <!--CARDS-->
+                        <div
+                          id="contentList"
+                          class="row d-flex justify-content-between"
+                        ></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="list-group-item border-0 bg-transparent">
+                <i
+                  class="fa-solid fa-layer-group me-2"
+                  style="color: #687078"
+                ></i>
+                <a class="text-secondary text-decoration-none" href="#"
+                  >La tua libreria</a
+                >
+              </li>
+            </ul>
+          </navbar>
+          <!--------------------------------------------------->
+          <div class="text-light mt-2">
+            <ul class="list-group">
+              <li class="list-group-item border-0 bg-transparent">
+                <i
+                  class="fa-solid fa-square-plus me-2"
+                  style="color: #687078"
+                ></i>
+                <a class="text-secondary text-decoration-none" href="#"
+                  >Crea playlist</a
+                >
+              </li>
+              <li class="list-group-item border-0 bg-transparent">
+                <i class="fa-solid fa-heart me-2" style="color: #687078"></i>
+                <a class="text-secondary text-decoration-none" href="#"
+                  >Brani che ti piacciono</a
+                >
+              </li>
+              <li class="list-group-item border-0 bg-transparent">
+                <i class="fa-solid fa-bookmark me-2" style="color: #687078"></i>
+                <a class="text-secondary text-decoration-none" href="#"
+                  >I tuoi episodi</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <hr class="mx-3" />
+
+          <!-- SCROLL SECTION -->
+          <div>
+            <div id="scroll">
+              <ul class="list-group">
+                <li
+                  li
+                  class="list-group-item bg-transparent text-secondary border-0"
+                >
+                  Musical 2022
+                </li>
+                <li
+                  li
+                  class="list-group-item bg-transparent text-secondary border-0"
+                >
+                  pippo, pluto e paperino (nov-dec 2022)
+                </li>
+                <li
+                  li
+                  class="list-group-item bg-transparent text-secondary border-0"
+                >
+                  early stage emily syndrome (sett-ott 2022)
+                </li>
+                <li
+                  li
+                  class="list-group-item bg-transparent text-secondary border-0"
+                >
+                  Be the young
+                </li>
+                <li
+                  li
+                  class="list-group-item bg-transparent text-secondary border-0"
+                >
+                  '...' cit. Kimiko (lug-ago 2022)
+                </li>
+                <li
+                  li
+                  class="list-group-item bg-transparent text-secondary border-0"
+                >
+                  saggio vibes 💃🩰
+                </li>
+                <li
+                  li
+                  class="list-group-item bg-transparent text-secondary border-0"
+                >
+                  main character energy (mag-giu 2022)
+                </li>
+                <li
+                  li
+                  class="list-group-item bg-transparent text-secondary border-0"
+                >
+                  that fucking mood 🔪☠️
+                </li>
+                <li
+                  li
+                  class="list-group-item bg-transparent text-secondary border-0"
+                >
+                  VEE, CARLOTTA E GIACOMO VANNO A BOSIO
+                </li>
+                <li
+                  li
+                  class="list-group-item bg-transparent text-secondary border-0"
+                >
+                  An Emily Winchester kind of mood 🔪🖕
+                </li>
+                <li
+                  li
+                  class="list-group-item bg-transparent text-secondary border-0"
+                >
+                  landing page (mar-apr 2022)
+                </li>
+                <li
+                  li
+                  class="list-group-item bg-transparent text-secondary border-0"
+                >
+                  2021 lol
+                </li>
+                <li
+                  li
+                  class="list-group-item bg-transparent text-secondary border-0"
+                >
+                  cosa cazzo vuol dire questa affermazione (gen-feb 2022)
+                </li>
+                <li
+                  li
+                  class="list-group-item bg-transparent text-secondary border-0"
+                >
+                  honey and glass (nov-dic 2021)
+                </li>
+                <li
+                  li
+                  class="list-group-item bg-transparent text-secondary border-0"
+                >
+                  (Revenge) Training Arc 🦍
+                </li>
+                <li
+                  li
+                  class="list-group-item bg-transparent text-secondary border-0"
+                >
+                  Lidia 🤝 Emily
+                </li>
+                <li
+                  li
+                  class="list-group-item bg-transparent text-secondary border-0"
+                >
+                  minecraft e nintendo switch (sep-oct 2021)
+                </li>
+                <li
+                  li
+                  class="list-group-item bg-transparent text-secondary border-0"
+                >
+                  silvano d'orba? I hardly know her (lug - ago 2021)
+                </li>
+                <li
+                  li
+                  class="list-group-item bg-transparent text-secondary border-0"
+                >
+                  Culo 2021
+                </li>
+                <li
+                  li
+                  class="list-group-item bg-transparent text-secondary border-0"
+                >
+                  Frah Quintale Mix
+                </li>
+                <li
+                  li
+                  class="list-group-item bg-transparent text-secondary border-0"
+                >
+                  Francesco Guccini Mix
+                </li>
+                <li
+                  li
+                  class="list-group-item bg-transparent text-secondary border-0"
+                >
+                  Lo Stato Sociale Mix
+                </li>
+                <li
+                  li
+                  class="list-group-item bg-transparent text-secondary border-0"
+                >
+                  chapter 4/? (mag-giu 2021)
+                </li>
+                <li
+                  li
+                  class="list-group-item bg-transparent text-secondary border-0"
+                >
+                  Strive School <> The Hunt Motivation
+                </li>
+                <li
+                  li
+                  class="list-group-item bg-transparent text-secondary border-0"
+                >
+                  mi stavo dimenticando (mar-apr 2021)
+                </li>
+                <li
+                  li
+                  class="list-group-item bg-transparent text-secondary border-0"
+                >
+                  high school musical 1,2,3
+                </li>
+                <li
+                  li
+                  class="list-group-item bg-transparent text-secondary border-0"
+                >
+                  quanto trash cazzo
+                </li>
+                <li
+                  li
+                  class="list-group-item bg-transparent text-secondary border-0"
+                >
+                  The 2020 Playlist
+                </li>
+                <li
+                  li
+                  class="list-group-item bg-transparent text-secondary border-0"
+                >
+                  ma(ncanza) che cazzo ne so io (gen-feb 2021)
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!--MAIN-->
+        <main class="col-7 p-0 backGroundBlack bg-gradient">
+          <div class="container-fluid">
+            <div class="container-fluid p-0">
+              <div class="row">
+                <!--hero section-->
+                <div class="col" id="bg-image">
+                  <div class="row mb-5">
+                    <!--icone-->
+                    <div class="col mt-3 d-flex justify-content-between">
+                      <div>
+                        <a id="previousArtist" class="text-decoration-none">
+                          <i
+                            class="fa-solid fa-circle-chevron-left fa-2xl"
+                            style="color: black"
+                          ></i>
+                        </a>
+                        <a id="nextArtist" class="text-decoration-none">
+                          <i
+                            class="fa-solid fa-circle-chevron-right fa-2xl"
+                            style="color: black"
+                          ></i>
+                        </a>
+                      </div>
+                      <!-- ========== ICONA PROFILO ========== -->
+                      <div class="dropdown">
+                        <button
+                          class="backGroundBlack btn btn-dark rounded-5 dropdown-toggle btn-sm mb-3 p-0 pe-2"
+                          type="button"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false"
+                        >
+                          <img
+                            src="./assets/images/avatar-2.jpg"
+                            class="rounded-circle"
+                            alt="immagine profilo"
+                            height="23px"
+                            width="23px"
+                          />
+                          Livia Nautilus ...
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-dark rounded-2">
+                          <li><a class="dropdown-item" href="#">Account</a></li>
+                          <li>
+                            <a class="dropdown-item" href="#">Impostazioni</a>
+                          </li>
+
+                          <li><hr class="dropdown-divider" /></li>
+                          <li>
+                            <a class="dropdown-item" href="#">Esci</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row d-flex mb-3 text-light">
+                    <small
+                      ><img src="./assets/images/verify.png" />Artista
+                      verificato</small
+                    >
+                    <div
+                      class="col-8 d-flex flex-column align-items-start align-self-end"
+                    >
+                      <h1
+                        id="headerArtistName"
+                        class="mb-3 display-2 fw-bolder"
+                      ></h1>
+                    </div>
+                    <small
+                      ><small id="headerMonthlyFan"></small> ascoltatori mensili
+                    </small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="container text-light">
+              <div class="row d-flex mt-4">
+                <div class="col-1">
+                  <i
+                    class="fa-solid fa-circle-play fa-2xl mt-1 mx-2"
+                    style="color: #1ed760"
+                  ></i>
+                </div>
+                <div class="col-11 d-flex align-items-center">
+                  <button type="button" class="following btn btn-outline-light">
+                    <span style="width: 10px">FOLLOWING</span>
+                  </button>
+                  <i
+                    class="fa-solid fa-ellipsis mx-3"
+                    style="color: #687078"
+                  ></i>
+                </div>
+              </div>
+
+              <div class="row mt-3">
+                <div class="col-8">
+                  <h5>Popolari</h5>
+                  <div class="mt-3 d-flex flex-column" id="popularSongs">
+                    <!--CANZONI DINAMICHE-->
+                  </div>
+                  <div class="d-flex">
+                    <small>VISUALIZZA ALTRO</small>
+                  </div>
+                </div>
+                <div class="col-4">
+                  <h5>Brani che ti piacciono</h5>
+
+                  <div class="d-flex">
+                    <div>
+                      <img class="me-2 rounded-circle" id="likeArtistImg" />
+                    </div>
+                    <p>
+                      <strong
+                        >Hai messo mi piace a
+                        <span id="likeNumber"></span> brani</strong
+                      >
+                      <br />
+                      <small>Di</small> <small id="likeArtist"></small>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </main>
+
+        <!--Colonna aside amici-->
+
+        <!--Abbiamo dovuto aggiungere due colonne per dividere h6 da icone-->
+        <div class="backGroundBlack col text-light p-0">
+          <div class="container">
+            <div class="row gx-2 mt-2">
+              <div class="col-10 text-light p-0">
+                <div>
+                  <h6>Attività amici</h6>
+                </div>
+              </div>
+              <div class="col-2 text-light p-0">
+                <div>
+                  <i
+                    class="fa-solid fa-user-plus fa-sm"
+                    style="color: #687078"
+                  ></i>
+                  <i class="fa-solid fa-xmark fa-sm" style="color: #687078"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="fontSize12 text-secondary container">
+            <!--amici-->
+            <div class="mb-3 p-0 pe-2 mt-4">
+              <div class="row">
+                <div class="col-2">
+                  <img
+                    src="./assets/images/avatar-5.jpg"
+                    class="rounded-circle me-2"
+                    alt="immagine profilo"
+                    height="40px"
+                    width="40px"
+                  />
+                </div>
+                <div class="col-7">
+                  <span>Charlie Hookham</span>
+                  <p class="m-0"><small>Charlie Puth - Loser</small></p>
+                  <p>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-disc"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"
+                      />
+                      <path
+                        d="M10 8a2 2 0 1 1-4 0 2 2 0 0 1 4 0M8 4a4 4 0 0 0-4 4 .5.5 0 0 1-1 0 5 5 0 0 1 5-5 .5.5 0 0 1 0 1m4.5 3.5a.5.5 0 0 1 .5.5 5 5 0 0 1-5 5 .5.5 0 0 1 0-1 4 4 0 0 0 4-4 .5.5 0 0 1 .5-.5"
+                      />
+                    </svg>
+                    <span>Charlie</span>
+                  </p>
+                </div>
+                <div class="col-3">
+                  <p>4 ore</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="mb-3 p-0 pe-2">
+              <div class="row">
+                <div class="col-2">
+                  <img
+                    src="./assets/images/avatar-6.jpg"
+                    class="rounded-circle me-2"
+                    alt="immagine profilo"
+                    height="40px"
+                    width="40px"
+                  />
+                </div>
+                <div class="col-7">
+                  <span>lightdark02</span>
+                  <p class="m-0"><small>Olivia Rodrigo - Deja Vu</small></p>
+                  <p>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-disc"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"
+                      />
+                      <path
+                        d="M10 8a2 2 0 1 1-4 0 2 2 0 0 1 4 0M8 4a4 4 0 0 0-4 4 .5.5 0 0 1-1 0 5 5 0 0 1 5-5 .5.5 0 0 1 0 1m4.5 3.5a.5.5 0 0 1 .5.5 5 5 0 0 1-5 5 .5.5 0 0 1 0-1 4 4 0 0 0 4-4 .5.5 0 0 1 .5-.5"
+                      />
+                    </svg>
+                    <span>Sour</span>
+                  </p>
+                </div>
+                <div class="col-3">
+                  <p>4 ore</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="mb-3 p-0 pe-2">
+              <div class="row">
+                <div class="col-2">
+                  <img
+                    src="./assets/images/avatar-7.jpg"
+                    class="rounded-circle me-2"
+                    alt="immagine profilo"
+                    height="40px"
+                    width="40px"
+                  />
+                </div>
+                <div class="col-7">
+                  <span>Valeria Traverso</span>
+                  <p class="m-0"><small>Doja Cat - Woman</small></p>
+                  <p>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-disc"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"
+                      />
+                      <path
+                        d="M10 8a2 2 0 1 1-4 0 2 2 0 0 1 4 0M8 4a4 4 0 0 0-4 4 .5.5 0 0 1-1 0 5 5 0 0 1 5-5 .5.5 0 0 1 0 1m4.5 3.5a.5.5 0 0 1 .5.5 5 5 0 0 1-5 5 .5.5 0 0 1 0-1 4 4 0 0 0 4-4 .5.5 0 0 1 .5-.5"
+                      />
+                    </svg>
+                    <span>Planet Her</span>
+                  </p>
+                </div>
+                <div class="col-3">
+                  <p>4 ore</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ========== Footer ========== -->
+
+    <footer class="sticky-bottom container-fluid bg-dark text-light">
+      <div class="row">
+        <div class="col-3">
+          <div class="flex-row d-flex my-2">
+            <img
+              id="playerTrackImage"
+              src="assets/images/Screenshot 2023-12-14 150607.png"
+              class="me-3"
+              width="20%"
+            />
+            <div>
+              <!--Div Canzone e cantante-->
+              <p id="playerTrackName" class="ml-2 me-3 mb-1 mt-2">evermore</p>
+              <small id="playerArtistName" class="fontSize12"
+                >Taylor Swift</small
+              >
+            </div>
+            <div>
+              <i class="fa-regular fa-heart mt-4" style="color: #ffffff"></i>
+            </div>
+          </div>
+        </div>
+
+        <!--Div PLAYER-->
+        <div class="col-7 d-flex justify-content-center">
+          <div class="row col-8 flex-column">
+            <div class="col mt-4 text-center mb-2">
+              <i
+                class="fa-solid fa-shuffle fa-lg mx-1"
+                style="color: #1a6f38"
+              ></i>
+              <i
+                class="fa-solid fa-caret-left fa-lg mx-1"
+                style="color: #b4b4b4"
+              ></i>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="30"
+                height="30"
+                fill="white"
+                class="bi bi-play-circle-fill mx-1"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814l-3.5-2.5"
+                />
+              </svg>
+              <i
+                class="fa-solid fa-caret-right fa-lg mx-1"
+                style="color: #b4b4b4"
+              ></i>
+              <i
+                class="fa-solid fa-repeat fa-lg mx-1"
+                style="color: #1a6f38"
+              ></i>
+            </div>
+            <!--PROGRESSIVE BAR-->
+            <div class="col d-flex flex-column">
+              <div class="row align-items-center">
+                <div class="col-1">
+                  <span>0:58</span>
+                </div>
+                <div class="col-10">
+                  <div
+                    class="progress bg-secondary"
+                    role="progressbar"
+                    aria-valuenow="25"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                    style="height: 5px"
+                    width="100%"
+                  >
+                    <div class="progress-bar bg-light" style="width: 25%"></div>
+                  </div>
+                </div>
+                <div class="col-1">
+                  <span id="durataTrack"
+                    ><!--contenuto dinamico prendere "duration" del brano--></span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--Div ICONE CONTROLLI-->
+        <div class="col-2 d-flex align-items-center">
+          <div class="">
+            <i
+              class="fa-solid fa-microphone-lines fa-sm"
+              style="color: #b4b4b4"
+            ></i>
+            <i
+              class="fa-solid fa-bars-staggered fa-sm mx-2"
+              style="color: #b4b4b4"
+            ></i>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="#B4B4B4"
+              class="bi bi-speaker"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M12 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z"
+              />
+              <path
+                d="M8 4.75a.75.75 0 1 1 0-1.5.75.75 0 0 1 0 1.5M8 6a2 2 0 1 0 0-4 2 2 0 0 0 0 4m0 3a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3m-3.5 1.5a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0"
+              />
+            </svg>
+            <i class="fa-solid fa-volume-low fa-sm" style="color: #b4b4b4"></i>
+            <input
+              type="range"
+              class="form-range"
+              id="customRange1"
+              style="width: 55%; height: 10px"
+            />
+            <i
+              class="fa-solid fa-up-right-and-down-left-from-center fa-sm"
+              style="color: #7c7e83"
+            ></i>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./assets/JavaScript/api.js"></script>
+    <script src="./assets/JavaScript/utils.js"></script>
+    <script src="./assets/JavaScript/artist.js"></script>
+  </body>
+</html>
